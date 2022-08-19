@@ -8,7 +8,8 @@
     "watch:files": "onchange \"src/**/*\" -- npm run build",
     "build": "npm run build:sass && npm run build:tailwind",
     "build:sass": "sass tailwind.scss src/input.css",
-    "build:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/dist/output.css"
+    "build:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/dist/output.css",
+    "update": "npm update --dev"
   },
   "keywords": [],
   "author": "",
