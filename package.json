@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-with-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run watch:files",
+    "watch:files": "onchange \"src/**/*\" -- npm run build",
+    "build": "npm run build:sass && npm run build:tailwind",
+    "build:sass": "sass tailwind.scss src/input.css",
+    "build:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/dist/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.4",
+    "tailwindcss": "^3.1.8"
+  }
+}
